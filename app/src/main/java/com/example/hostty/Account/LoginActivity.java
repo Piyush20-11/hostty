@@ -25,6 +25,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.example.hostty.HomeActivity;
 import com.example.hostty.R;
+import com.example.hostty.User.UserClass;
 import com.example.hostty.Utils.PreferenceManager;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
