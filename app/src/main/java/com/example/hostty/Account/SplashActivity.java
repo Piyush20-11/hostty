@@ -15,7 +15,17 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.example.hostty.HomeActivity;
+import com.example.hostty.Mess.messnotification.AlarmBootReceiver;
+import com.example.hostty.Mess.messnotification.BreakfastAlarmMaker;
+import com.example.hostty.Mess.messnotification.DinnerAlarmMaker;
+import com.example.hostty.Mess.messnotification.LunchAlarmMaker;
+import com.example.hostty.Mess.messnotification.TiffinAlarmMaker;
+import com.example.hostty.R;
 import com.example.hostty.Utils.PreferenceManager;
+import com.google.android.gms.fido.fido2.api.common.RequestOptions;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -57,7 +67,7 @@ public class SplashActivity extends AppCompatActivity {
 
         Glide.with(this)
                 .load(R.drawable.gif_splash)
-                .apply(new RequestOptions().diskCacheStrategy(DiskCacheStrategy.AUTOMATIC))
+                .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
                 .into(splash);
 
         createNotificationChannel();
