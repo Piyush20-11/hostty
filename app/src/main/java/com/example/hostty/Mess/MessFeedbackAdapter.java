@@ -52,27 +52,27 @@ public class MessFeedbackAdapter extends BaseAdapter {
 
         FeedbackUserClass m = FeedbackList.get(i);
 
-//        CircleImageView circleImageView=view.findViewById(R.id.feedback_imageView);
-//        TextView username=view.findViewById(R.id.mess_feedback_username);
-//        TextView title =view.findViewById(R.id.mess_feedback_title);
-//        TextView day=view.findViewById(R.id.mess_feedback_day);
-//        TextView date=view.findViewById(R.id.mess_feedback_date);
-//        RatingBar ratingBar=view.findViewById(R.id.mess_feedback_rating);
-//        TextView desc=view.findViewById(R.id.mess_feedback_desc);
+        CircleImageView circleImageView=view.findViewById(R.id.feedback_imageView);
+        TextView username=view.findViewById(R.id.mess_feedback_username);
+        TextView title =view.findViewById(R.id.mess_feedback_title);
+        TextView day=view.findViewById(R.id.mess_feedback_day);
+        TextView date=view.findViewById(R.id.mess_feedback_date);
+        RatingBar ratingBar=view.findViewById(R.id.mess_feedback_rating);
+        TextView desc=view.findViewById(R.id.mess_feedback_desc);
 
-//        String food=(m.getFeedbackDay() + "  "+ m.getFeedbackPart());
-//        username.setText(m.getFeedbackUsername());
-//        title.setText(m.getFeedbackTitle());
-//        day.setText(food);
-//        date.setText(m.getFeedbackDate());
-//        desc.setText(m.getFeedbackDesc());
-//        ratingBar.setRating(Float.parseFloat(m.getFeedbackRatings()));
-//
-//        Glide.with(mcontext)
-//                .load("" +m.getFeedbackUri())
-//                .into(circleImageView);
-//
-//        ratingBar.setRating(Float.parseFloat(m.getFeedbackRatings()));
+        String food=(m.getFeedbackDay() + "  "+ m.getFeedbackPart());
+        username.setText(m.getFeedbackUsername());
+        title.setText(m.getFeedbackTitle());
+        day.setText(food);
+        date.setText(m.getFeedbackDate());
+        desc.setText(m.getFeedbackDesc());
+        ratingBar.setRating(Float.parseFloat(m.getFeedbackRatings()));
+
+        Glide.with(mcontext)
+                .load("" +m.getFeedbackUri())
+                .into(circleImageView);
+
+        ratingBar.setRating(Float.parseFloat(m.getFeedbackRatings()));
         return view;
     }
 }

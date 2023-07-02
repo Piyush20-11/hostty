@@ -10,9 +10,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-//        maven {
-//            url 'http://dl.bintray.com/amulyakhare/maven'
-//        }
+        maven { url 'https://jcenter.bintray.com/' }
     }
 }
 rootProject.name = "hostty"

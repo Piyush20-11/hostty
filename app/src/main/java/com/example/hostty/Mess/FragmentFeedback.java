@@ -126,89 +126,89 @@ public class FragmentFeedback extends Fragment {
             }
         });
 
-//        fabButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
+        fabButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
 
-//                final Dialog dialog = new Dialog(Objects.requireNonNull(getActivity()));
-//                dialog.setContentView(R.layout.add_feedback);
-//                dialog.setTitle(" Feedback ");
-//
-//                final Spinner aboutSpinner = dialog.findViewById(R.id.add_feedback_spinner1);
-//                final Spinner daySpinner = dialog.findViewById(R.id.add_feedback_spinner2);
-//                final EditText titleEditText = dialog.findViewById(R.id.feedback_title);
-//                final RatingBar ratingBar = dialog.findViewById(R.id.add_feedback_ratings);
-//                final EditText descEditText = dialog.findViewById(R.id.add_feedback_desc);
-//                Button submit = dialog.findViewById(R.id.add_feedback_submit);
-//
-//                ArrayAdapter<String> aboutAdapter = new ArrayAdapter<String>(
-//                        getContext(), R.layout.spinner_item, getResources().getStringArray(R.array.feedbackAbout)
-//                );
-//                aboutAdapter.setDropDownViewResource(R.layout.spinner_drop_down_item);
-//                aboutSpinner.setAdapter(aboutAdapter);
-//
-//                ArrayAdapter<String> dayAdapter = new ArrayAdapter<String>(
-//                        getContext(), R.layout.spinner_item, getResources().getStringArray(R.array.dayOfWeek)
-//                );
-//                dayAdapter.setDropDownViewResource(R.layout.spinner_drop_down_item);
-//                daySpinner.setAdapter(dayAdapter);
+                final Dialog dialog = new Dialog(requireActivity());
+                dialog.setContentView(R.layout.add_feedback);
+                dialog.setTitle(" Feedback ");
+
+                final Spinner aboutSpinner = dialog.findViewById(R.id.add_feedback_spinner1);
+                final Spinner daySpinner = dialog.findViewById(R.id.add_feedback_spinner2);
+                final EditText titleEditText = dialog.findViewById(R.id.feedback_title);
+                final RatingBar ratingBar = dialog.findViewById(R.id.add_feedback_ratings);
+                final EditText descEditText = dialog.findViewById(R.id.add_feedback_desc);
+                Button submit = dialog.findViewById(R.id.add_feedback_submit);
+
+                ArrayAdapter<String> aboutAdapter = new ArrayAdapter<String>(
+                        getContext(), R.layout.spinner_item, getResources().getStringArray(R.array.feedbackAbout)
+                );
+                aboutAdapter.setDropDownViewResource(R.layout.spinner_drop_down_item);
+                aboutSpinner.setAdapter(aboutAdapter);
+
+                ArrayAdapter<String> dayAdapter = new ArrayAdapter<String>(
+                        getContext(), R.layout.spinner_item, getResources().getStringArray(R.array.dayOfWeek)
+                );
+                dayAdapter.setDropDownViewResource(R.layout.spinner_drop_down_item);
+                daySpinner.setAdapter(dayAdapter);
 
 
-//                submit.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View view) {
-//
-//                        about = aboutSpinner.getSelectedItem().toString();
-//                        day = daySpinner.getSelectedItem().toString();
-//                        title = titleEditText.getText().toString();
-//                        Log.d("Title", title);
-//                        rating = Float.toString(ratingBar.getRating());
-//                        desc = descEditText.getText().toString();
-//                        Log.d("Desc", desc);
-//
-//                        if (title.isEmpty()) {
-//                            Toast.makeText(getActivity(), "Please fill Feedback title ", Toast.LENGTH_SHORT).show();
-//                            titleEditText.requestFocus();
-//                            return;
-//                        }
-//                        Calendar calendar = Calendar.getInstance();
-//                        String date = new SimpleDateFormat("dd MMM yy h:mm a", Locale.US).format(calendar.getTime());
-//                        String username = user.getDisplayName();
-//                        Uri photoUri = user.getPhotoUrl();
-//
-//                        String image;
-//                        if (photoUri == null) {
-//                            image = "https://drive.google.com/open?id=0BzHSfMqO1EIMdFZSMThJeEF3WUdxT05KTWo2bDFVZkxUbmk4";
-//
-//                        } else {
-//                            image = photoUri.toString();
-//                        }
-//
-//
-//                        FeedbackUserClass newFeedback = new FeedbackUserClass(username, image, title, day, about, date, rating, desc);
-//                        String userReference = messFeedbackRef.push().getKey();
-//                        assert userReference != null;
-//                        messFeedbackRef.child(userReference).setValue(newFeedback);
-//                        dialog.dismiss();
-//
-//
-//                    }
-//                });
-//
-//                dialog.show();
-//
-//            }
-//
-//        });
-//
-//        Log.d(TAG, "onCreate: reached");
-//        return view;
-//    }
-//
-//
-//    public void onResume() {
-//        super.onResume();
-            return view;
+                submit.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                        about = aboutSpinner.getSelectedItem().toString();
+                        day = daySpinner.getSelectedItem().toString();
+                        title = titleEditText.getText().toString();
+                        Log.d("Title", title);
+                        rating = Float.toString(ratingBar.getRating());
+                        desc = descEditText.getText().toString();
+                        Log.d("Desc", desc);
+
+                        if (title.isEmpty()) {
+                            Toast.makeText(getActivity(), "Please fill Feedback title ", Toast.LENGTH_SHORT).show();
+                            titleEditText.requestFocus();
+                            return;
+                        }
+                        Calendar calendar = Calendar.getInstance();
+                        String date = new SimpleDateFormat("dd MMM yy h:mm a", Locale.US).format(calendar.getTime());
+                        String username = user.getDisplayName();
+                        Uri photoUri = user.getPhotoUrl();
+
+                        String image;
+                        if (photoUri == null) {
+                            image = "https://drive.google.com/open?id=0BzHSfMqO1EIMdFZSMThJeEF3WUdxT05KTWo2bDFVZkxUbmk4";
+
+                        } else {
+                            image = photoUri.toString();
+                        }
+
+
+                        FeedbackUserClass newFeedback = new FeedbackUserClass(username, image, title, day, about, date, rating, desc);
+                        String userReference = messFeedbackRef.push().getKey();
+                        assert userReference != null;
+                        messFeedbackRef.child(userReference).setValue(newFeedback);
+                        dialog.dismiss();
+
+
+                    }
+                });
+
+                dialog.show();
+
             }
-        }
+
+        });
+
+        Log.d(TAG, "onCreate: reached");
+        return view;
+    }
+
+
+    public void onResume() {
+        super.onResume();
+//            return view;
+    }
+}
