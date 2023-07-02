@@ -19,10 +19,10 @@ import androidx.browser.customtabs.CustomTabsIntent;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import com.amulyakhare.textdrawable.TextDrawable;
 import com.bumptech.glide.Glide;
 import com.example.hostty.Account.LoginActivity;
 import com.example.hostty.HomeActivity;
+import com.example.hostty.Mess.MessActivity;
 import com.example.hostty.R;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -33,16 +33,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.iitdh.sonusourav.instigo.Account.LoginActivity;
-import com.iitdh.sonusourav.instigo.Complaints.ComplaintsActivity;
-import com.iitdh.sonusourav.instigo.Council.CouncilActivity;
-import com.iitdh.sonusourav.instigo.HomeActivity;
-import com.iitdh.sonusourav.instigo.Mess.MessActivity;
-import com.iitdh.sonusourav.instigo.R;
-import com.iitdh.sonusourav.instigo.Resources.ResourceActivity;
-import com.iitdh.sonusourav.instigo.Settings.SettingsActivity;
-import com.iitdh.sonusourav.instigo.User.ProfileActivity;
-import com.iitdh.sonusourav.instigo.User.UpdatePassword;
+
 
 
 public class CommonFunctions {
@@ -164,24 +155,24 @@ public class CommonFunctions {
             usernameTextView.setText(firebaseUser.getDisplayName());
 
             Uri photoUri = firebaseUser.getPhotoUrl();
-            if(photoUri == null){
-                String userName = firebaseUser.getDisplayName();
-                char ch;
-                if(userName != null) {
-                    ch = userName.charAt(0);
-                    TextDrawable drawable = TextDrawable.builder()
-                            .buildRound(String.valueOf(ch), Color.BLUE);
-                    Bitmap bitmap = drawableToBitmap(drawable);
-                    Glide.with(activity.getApplicationContext())
-                            .load(bitmap)
-                            .into(userImage);
-                }
-            }
-            else{
-                Glide.with(activity.getApplicationContext())
-                        .load(photoUri)
-                        .into(userImage);
-            }
+//            if(photoUri == null){
+//                String userName = firebaseUser.getDisplayName();
+//                char ch;
+//                if(userName != null) {
+//                    ch = userName.charAt(0);
+//                    TextDrawable drawable = TextDrawable.builder()
+//                            .buildRound(String.valueOf(ch), Color.BLUE);
+//                    Bitmap bitmap = drawableToBitmap(drawable);
+//                    Glide.with(activity.getApplicationContext())
+//                            .load(bitmap)
+//                            .into(userImage);
+//                }
+//            }
+//            else{
+//                Glide.with(activity.getApplicationContext())
+//                        .load(photoUri)
+//                        .into(userImage);
+//            }
         }
     }
 

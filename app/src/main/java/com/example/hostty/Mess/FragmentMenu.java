@@ -39,24 +39,24 @@ public class FragmentMenu extends Fragment {
         // Required empty public constructor
     }
 
-    private String weekdays[]={"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
+    private String weekdays[] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
-    private  FoldingCellListAdapter adapter;
+    private FoldingCellListAdapter adapter;
     private ArrayList<Item> items;
     private float ratings;
-    private  View view;
+    private View view;
     private Button dayButton;
 
     private DatabaseReference ratingRef;
     private DatabaseReference dayRef;
 
 
-//    @Override
-//    public void onCreate(@Nullable Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//    }
-//
-//
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+}
 //    @Override
 //    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
 //                             Bundle savedInstanceState) {
@@ -361,11 +361,11 @@ public class FragmentMenu extends Fragment {
 //
 //                @Override
 //                public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
-////
-////                    ratingBar= view.findViewById(R.id.content_ratings);
-////                    ratings =ratingBar.getRating();
-////                    Log.d("Ratings"," "+ ratings);
-////
+//
+//                    ratingBar= view.findViewById(R.id.content_ratings);
+//                    ratings =ratingBar.getRating();
+//                    Log.d("Ratings"," "+ ratings);
+//
 //                }
 //            });
 //        }
@@ -773,6 +773,6 @@ public class FragmentMenu extends Fragment {
 //    }
 //
 //
-
-}
+//
+//}
 

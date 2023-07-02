@@ -60,6 +60,13 @@
             android:theme="@style/AppTheme.NoActionBar.TitleBar"
 
             />
+        <activity
+            android:name=".Mess.MessActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.TitleBar">
+
+        </activity>
         <receiver
             android:name=".Mess.messnotification.AlarmBootReceiver"
             android:enabled="true"
