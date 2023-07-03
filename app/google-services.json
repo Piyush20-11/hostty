@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "344292167762",
+    "firebase_url": "https://hostty-84e1d-default-rtdb.firebaseio.com",
+    "project_id": "hostty-84e1d",
+    "storage_bucket": "hostty-84e1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:344292167762:android:c70bffb2c4284452630f8b",
+        "android_client_info": {
+          "package_name": "com.example.hostty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "344292167762-9k7f40c6gl9ka6cj23hip9selutirb4n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hostty",
+            "certificate_hash": "4cd4dc58cde0f91d9089df19785f6e4996665bd8"
+          }
+        },
+        {
+          "client_id": "344292167762-pp7d4kqkp08eh2oadbgio4tugqabcpli.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNXpOnSXY_71cI8ICQUiQCs2JiKyaHITA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "344292167762-i9548eijl6g0cc2710en3uhhpm9n5gjf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
