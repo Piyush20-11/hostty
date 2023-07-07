@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 
 import com.example.hostty.Mess.MessActivity;
+import com.example.hostty.Resources.ResourceActivity;
 import com.example.hostty.Utils.CommonFunctions;
 import com.google.android.material.navigation.NavigationView;
 import androidx.core.view.GravityCompat;
@@ -103,9 +104,9 @@ public class HomeActivity extends AppCompatActivity
 //                startActivity(new Intent(HomeActivity.this,ComplaintsActivity.class));
 //                break;
 //
-//            case R.id.imagebt_his:
-//                startActivity(new Intent(HomeActivity.this,ResourceActivity.class));
-//                break;
+            case R.id.imagebt_his:
+                startActivity(new Intent(HomeActivity.this, ResourceActivity.class));
+                break;
 //
 //            case R.id.image_ec:
 //                startActivity(new Intent(HomeActivity.this,CouncilActivity.class));

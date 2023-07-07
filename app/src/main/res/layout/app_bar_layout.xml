@@ -62,11 +62,11 @@
 <!--      android:visibility="gone"-->
 <!--      />-->
 
-<!--  <include-->
-<!--      layout="@layout/activity_resources"-->
-<!--      android:id="@+id/include_res"-->
-<!--      android:visibility="gone"-->
-<!--      />-->
+  <include
+      layout="@layout/activity_resources"
+      android:id="@+id/include_res"
+      android:visibility="gone"
+      />
 
 <!--  <include-->
 <!--      layout="@layout/activity_feedback"-->

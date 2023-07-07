@@ -73,6 +73,128 @@
             android:theme="@style/AppTheme.NoActionBar.TitleBar">
 
         </activity>
+
+        <activity
+            android:name=".Resources.ResourceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+
+        <activity
+            android:name=".Resources.CS.CSResourceDocs"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Resources.CS.CSBranch" />
+        </activity>
+
+        <activity
+            android:name=".Resources.CS.CSBranch"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Resources.ResourceActivity" />
+        </activity>
+
+        <activity
+            android:name=".Resources.ECE.ECEResourceDocs"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Resources.ECE.ECEBranch" />
+        </activity>
+
+        <activity
+            android:name=".Resources.ECE.ECEBranch"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Resources.ResourceActivity" />
+        </activity>
+
+        <activity android:name=".Resources.EE.EEBranch">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Resources.ResourceActivity" />
+        </activity>
+
+        <activity
+            android:name=".Resources.EE.EEResourceDocs"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Resources.EE.EEBranch" />
+        </activity>
+
+        <activity
+            android:name=".Resources.ME.MEBranch"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Resources.ResourceActivity" />
+        </activity>
+
+        <activity
+            android:name=".Resources.ME.MEResourceDocs"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Resources.ME.MEBranch" />
+        </activity>
+
+        <activity
+            android:name=".Resources.CIV.CIVBranch"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Resources.ResourceActivity" />
+        </activity>
+
+        <activity
+            android:name=".Resources.CIV.CIVResourceDocs"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Resources.CIV.CIVBranch" />
+        </activity>
+
+        <activity
+            android:name=".Resources.Common.CommonBranch"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Resources.ResourceActivity" />
+        </activity>
+
+        <activity
+            android:name=".Resources.Common.CommonResourceDocs"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Resources.Common.CommonBranch" />
+        </activity>
+
         <receiver
             android:name=".Mess.messnotification.AlarmBootReceiver"
             android:enabled="true"
