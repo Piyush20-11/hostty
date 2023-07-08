@@ -172,5 +172,6 @@
     <string name="backdrop_subtitle">More to come....</string>
     <string name="write_file">This app needs access to your file storage so that it can write files.</string>
     <string name="url_path">https://drive.google.com/open?id=0BzHSfMqO1EIMRnRYNllndWlfUW9TMTNDTGpmQUpRMEI3Y1Rz</string>
-<!--    <string name="default_web_client_id">344292167762-i9548eijl6g0cc2710en3uhhpm9n5gjf.apps.googleusercontent.com</string>-->
+    <string name="hostty_res">HOSTTY RES</string>
+    <!--    <string name="default_web_client_id">344292167762-i9548eijl6g0cc2710en3uhhpm9n5gjf.apps.googleusercontent.com</string>-->
 </resources>
