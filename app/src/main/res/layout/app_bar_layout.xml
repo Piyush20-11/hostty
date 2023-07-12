@@ -40,11 +40,11 @@
 <!--      android:visibility="gone"-->
 <!--      />-->
 
-<!--  <include-->
-<!--      layout="@layout/activity_complaint"-->
-<!--      android:id="@+id/include_maintenance"-->
-<!--      android:visibility="gone"-->
-<!--      />-->
+  <include
+      layout="@layout/activity_complaint"
+      android:id="@+id/include_maintenance"
+      android:visibility="gone"
+      />
   <include
       layout="@layout/activity_mess"
       android:id="@+id/include_tabbed_content"

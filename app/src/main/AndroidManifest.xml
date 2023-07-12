@@ -79,6 +79,45 @@
         </activity>
 
         <activity
+            android:name=".Complaints.ComplaintsActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar.TitleBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+
+
+        <activity
+            android:name=".Complaints.ComplainRegister"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Complaints.ComplaintsActivity" />
+        </activity>
+
+        <activity
+            android:name=".Complaints.ComplainStatus"
+            android:exported="false"
+            android:screenOrientation="portrait"
+
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Complaints.ComplaintsActivity" />
+        </activity>
+        <activity
+            android:name=".Complaints.StatusDetails"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Complaints.ComplaintsActivity" />
+        </activity>
+
+        <activity
             android:name=".Resources.ResourceActivity"
             android:exported="false"
             android:screenOrientation="portrait"

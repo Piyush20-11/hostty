@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 
+import com.example.hostty.Complaints.ComplaintsActivity;
 import com.example.hostty.Mess.MessActivity;
 import com.example.hostty.Resources.ResourceActivity;
 import com.example.hostty.Utils.CommonFunctions;
@@ -100,10 +101,10 @@ public class HomeActivity extends AppCompatActivity
             case R.id.imagebt_hr:
                 startActivity(new Intent(HomeActivity.this, MessActivity.class));
                 break;
-//            case R.id.imagebt_bp:
-//                startActivity(new Intent(HomeActivity.this,ComplaintsActivity.class));
-//                break;
-//
+            case R.id.imagebt_bp:
+                startActivity(new Intent(HomeActivity.this, ComplaintsActivity.class));
+                break;
+
             case R.id.imagebt_his:
                 startActivity(new Intent(HomeActivity.this, ResourceActivity.class));
                 break;
