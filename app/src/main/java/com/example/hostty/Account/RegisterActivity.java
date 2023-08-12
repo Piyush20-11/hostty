@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.text.TextUtils;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -227,13 +228,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     //validateEmailMethod
     public boolean validateEmail(String email) {
-
-        Pattern pattern;
-        Matcher matcher;
-        String EMAIL_PATTERN = "^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
-        pattern = Pattern.compile(EMAIL_PATTERN);
-        matcher = pattern.matcher(email);
-        return matcher.matches();
+        return Patterns.EMAIL_ADDRESS.matcher(email).matches();
 
     }
 
